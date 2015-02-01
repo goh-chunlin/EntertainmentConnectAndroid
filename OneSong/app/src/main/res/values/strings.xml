@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Entertainment Connect</string>
+    <string name="play_media_button">▶</string>
+    <string name="loop_media_button">↻</string>
+    <string name="message_connecting_onedrive">Connecting OneDrive...</string>
+    <string name="place_holder_media_length">00:00</string>
+    <string name="dialog_box_ok">OK</string>
+    <string name="message_privacy_policy_title">Privacy Policy</string>
+    <string name="message_privacy_policy_content">
+        Entertainment Connect uses your internet connection to download information from your OneDrive account.
+        This application doesn\'t store any personal information or share personal information to third party.
+        If you have any question about this application, please send an email to GCL Project at chunlin@live.com.sg.
+        (Last Updated Date: 31 Jan 2015)
+    </string>
+    <string name="message_logout_fail_title">Fail To Logout</string>
+    <string name="message_logout_fail_content">We are unable to log you out from OneDrive because </string>
+
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="is_video_looping"></item>
+
+</resources>

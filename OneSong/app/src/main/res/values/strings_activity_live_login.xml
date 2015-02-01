@@ -1,0 +1,10 @@
+<resources>
+    <string name="title_activity_live_login">Sign in to your OneDrive</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="message_welcome">Your personal OneDrive media player</string>
+    <string name="message_login_loading">Hold on while logging you in...</string>
+    <string name="message_login_complete_with_error">Login complete but the status is </string>
+    <string name="message_login_fail">We are not able to log you in to OneDrive because </string>
+</resources>

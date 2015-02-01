@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ff000000"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="700dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:paddingTop="50dp"
+            android:keepScreenOn="true" />
+
+        <LinearLayout android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/play_media_button"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/program_orange"
+                android:onClick="onButtonClick" />
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:paddingTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/place_holder_media_length"
+                android:paddingTop="16dp"
+                android:id="@+id/txtDurationTimer" />
+
+            <ToggleButton
+                android:id="@+id/btnLoop"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:textOn="@string/loop_media_button" android:textOff="@string/loop_media_button"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/program_orange"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:onClick="onButtonClick" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_connecting_onedrive"
+            android:textSize="8pt"
+            android:id="@+id/txtMessage" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listMedia" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
