@@ -18,3 +18,7 @@ Before you run the project, please make sure you have updated the Client ID in C
 ## Requirement
 
  * Live SDK (https://github.com/liveservices/LiveSDK-for-Android)
+
+## App Download
+
+ * Click here to download Entertainment Connect for Android: https://play.google.com/store/apps/details?id=gclproject.onesong&hl=en
