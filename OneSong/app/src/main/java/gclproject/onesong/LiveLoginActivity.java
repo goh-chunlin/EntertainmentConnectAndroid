@@ -71,7 +71,9 @@ public class LiveLoginActivity extends Activity {
                         if (status == LiveStatus.CONNECTED) {
                             client = new LiveConnectClient(session);
                             Intent playerPage = new Intent(LiveLoginActivity.this, PlayerActivity.class);
+                            playerPage.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(playerPage);
+                            finish();
                         } else {
                             client = null;
                             TextView txtLoginMessage = (TextView) findViewById(R.id.txtLoginMessage);

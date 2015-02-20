@@ -396,7 +396,9 @@ public class PlayerActivity extends Activity {
                     public void onAuthComplete(LiveStatus status, LiveConnectSession session, Object userState) {
                         if (status == LiveStatus.UNKNOWN) {
                             Intent loginPage = new Intent(PlayerActivity.this, LiveLoginActivity.class);
+                            loginPage.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(loginPage);
+                            finish();
                         }
                     }
 
